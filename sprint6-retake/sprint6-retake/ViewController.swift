@@ -12,9 +12,14 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        resetButton.customView?.alpha = 0.0
     }
 
-
+    @IBAction func resetLock(_ sender: Any) {
+    
+    }
+    @IBOutlet weak var resetButton: UIBarButtonItem!
+    @IBOutlet weak var lockControl: LockControl!
+    
 }
 
